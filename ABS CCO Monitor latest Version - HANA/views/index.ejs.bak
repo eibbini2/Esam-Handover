@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      
+function syncItemsAmman() {
+  document.getElementById("itemsamman").click();
+}
+
+function syncCustomersAmman() {
+ document.getElementById("customersamman").click();
+}
+
+function syncInvoicesAmman() {
+ setTimeout(function(){document.getElementById("invoicesamman").click()},60000)
+}
+
+setInterval(function(){
+  var start = new Date();
+ /* if (start.getHours() == 8 || start.getHours() == 08 ||start.getHours() == 11 || start.getHours() == 16 )
+  {
+    syncItemsAmman();
+    setTimeout(()=>{syncItemsZarqa();},1800000);
+    setTimeout(()=>{$.get('/stopChrome', function(){})},2700000);
+  } else */
+     if (start.getHours() == 9 ||  start.getHours() == 09 ||  start.getHours() == 14)
+  {
+	syncItemsAmman();
+    setTimeout(()=>{syncItemsZarqa();},1800000);
+    setTimeout(()=>{$.get('/stopChrome', function(){})},2700000);
+  }
+   if ( start.getHours() == 00 || start.getHours() == 0 ||  start.getHours() == 10 ||  start.getHours() == 19)
+  {
+    console.log("Starting Send Zarqa Sales Transactions");
+    syncInvoicesZarqa();
+    setTimeout(()=>{$.get('/stopChrome', function(){})},1800000);
+  }
+  else if ( start.getHours() == 01 || start.getHours() == 1 ||  start.getHours() == 11 ||  start.getHours() == 15)
+  {
+    console.log("Starting Send Amman Sales Transactions");
+    syncInvoicesAmman();
+    setTimeout(()=>{$.get('/stopChrome', function(){})},1800000);
+  }
+  else if (start.getHours() == 4 || start.getHours() == 04)
+  {
+   // $.get('/stopChrome', function(){});
+  }
+},3600000);
+
+
+// setInterval(function(){
+//   syncCustomersAmman();
+//   },300000);
+  
+// setInterval(function(){
+//   syncInvoicesAmman();
+//   },120000);
+
+  function syncItemsZarqa() {
+  document.getElementById("itemszarqa").click();
+}
+
+function syncCustomersZarqa() {
+ document.getElementById("customerszarqa").click();
+}
+
+function syncInvoicesZarqa() {
+ document.getElementById("invoiceszarqa").click();
+}
+
+//  setInterval(function(){
+//    syncItemsZarqa();
+//    },3600000);
+
+  
+// setInterval(function(){
+//   syncCustomersZarqa();
+//   },300000);
+
+  
+// setInterval(function(){
+//   syncInvoicesZarqa();
+//   },360000);
+
+    </script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <a target="_blank" id="itemsamman" href="https://developer.posrocket.com/oauth/authorize/?redirect_uri=https://localhost:8888/CallbackItems&response_type=code&client_id=Q5cEUmPrnikN54RshVNh9XK7tUQGweOxUsU3tOMp&access_type=offline.&loc=Amman">Sync Items Amman</a>
+    <br/>
+    <br/>
+    <a target="_blank" id="customersamman" href="https://developer.posrocket.com/oauth/authorize/?redirect_uri=https://localhost:8888/CallbackCustomer&response_type=code&client_id=Q5cEUmPrnikN54RshVNh9XK7tUQGweOxUsU3tOMp&access_type=offline.&loc=Amman">Sync Customers Amman</a>
+    <br/>
+    <br/>
+    <a target="_blank" id="invoicesamman" href="https://developer.posrocket.com/oauth/authorize/?redirect_uri=https://localhost:8888/CallbackSalesTrans&response_type=code&client_id=Q5cEUmPrnikN54RshVNh9XK7tUQGweOxUsU3tOMp&access_type=offline.&loc=Amman">Sync Sales Transactions Amman</a>
+    <br/>
+    <br/>
+    <!-- <a target="_blank" id="GRPOamman" href="https://developer.posrocket.com/oauth/authorize/?redirect_uri=https://localhost:8888/CallbackGRPO&response_type=code&client_id=Q5cEUmPrnikN54RshVNh9XK7tUQGweOxUsU3tOMp&access_type=offline.&loc=Amman">Sync GRPO Amman</a> -->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <a target="_blank" id="itemszarqa" href="https://developer.posrocket.com/oauth/authorize/?redirect_uri=https://localhost:8888/CallbackItems&response_type=code&client_id=Q5cEUmPrnikN54RshVNh9XK7tUQGweOxUsU3tOMp&access_type=offline.&loc=Zarqa">Sync Items Zarqa</a>
+    <br/>
+    <br/>
+    <a target="_blank" id="customerszarqa" href="https://developer.posrocket.com/oauth/authorize/?redirect_uri=https://localhost:8888/CallbackCustomer&response_type=code&client_id=Q5cEUmPrnikN54RshVNh9XK7tUQGweOxUsU3tOMp&access_type=offline.&loc=Zarqa">Sync Customers Zarqa</a>
+    <br/>
+    <br/>
+    <a target="_blank" id="invoiceszarqa" href="https://developer.posrocket.com/oauth/authorize/?redirect_uri=https://localhost:8888/CallbackSalesTransZ&response_type=code&client_id=Q5cEUmPrnikN54RshVNh9XK7tUQGweOxUsU3tOMp&access_type=offline.&loc=Zarqa">Sync Sales Transactions Zarqa</a>
+    <br/>
+    <br/>
+    <!-- <a target="_blank" id="GRPOzarqa" href="https://developer.posrocket.com/oauth/authorize/?redirect_uri=https://localhost:8888/CallbackGRPO&response_type=code&client_id=Q5cEUmPrnikN54RshVNh9XK7tUQGweOxUsU3tOMp&access_type=offline.&loc=Zarqa">Sync GRPO Zarqa</a> -->
+  </body>
+</html>

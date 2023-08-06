@@ -1,0 +1,303 @@
+2022-10-19 09:44:20 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-19 09:44:20 - Started 1652
+2022-10-19 09:46:42 - Stopping ccosupport.exe
+2022-10-19 09:46:42 - ProcessKill 1652
+2022-10-19 09:46:42 - Found child process: 15880 Name: conhost.exe
+2022-10-19 09:46:42 - Found child process: 2020 Name: node.exe
+2022-10-19 09:46:42 - Stopping process 15880
+2022-10-19 09:46:42 - Send SIGINT 15880
+2022-10-19 09:46:42 - SIGINT to 15880 failed - Killing as fallback
+2022-10-19 09:46:42 - Stopping process 2020
+2022-10-19 09:46:42 - Send SIGINT 2020
+2022-10-19 09:46:42 - SIGINT to 2020 failed - Killing as fallback
+2022-10-19 09:46:42 - Stopping process 1652
+2022-10-19 09:46:42 - Send SIGINT 1652
+2022-10-19 09:46:42 - SIGINT to 1652 failed - Killing as fallback
+2022-10-19 09:46:42 - Finished ccosupport.exe
+2022-10-19 09:46:44 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-19 09:46:44 - Started 9340
+2022-10-20 12:17:27 - Stopping ccosupport.exe
+2022-10-20 12:17:27 - ProcessKill 9340
+2022-10-20 12:17:28 - Found child process: 2272 Name: conhost.exe
+2022-10-20 12:17:28 - Found child process: 15280 Name: node.exe
+2022-10-20 12:17:28 - Stopping process 2272
+2022-10-20 12:17:28 - Send SIGINT 2272
+2022-10-20 12:17:28 - SIGINT to 2272 failed - Killing as fallback
+2022-10-20 12:17:28 - Stopping process 15280
+2022-10-20 12:17:28 - Send SIGINT 15280
+2022-10-20 12:17:28 - SIGINT to 15280 failed - Killing as fallback
+2022-10-20 12:17:28 - Stopping process 9340
+2022-10-20 12:17:28 - Send SIGINT 9340
+2022-10-20 12:17:28 - SIGINT to 9340 failed - Killing as fallback
+2022-10-20 12:17:28 - Finished ccosupport.exe
+2022-10-20 12:17:29 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-20 12:17:29 - Started 14332
+2022-10-23 13:12:33 - Stopping ccosupport.exe
+2022-10-23 13:12:33 - ProcessKill 14332
+2022-10-23 13:12:33 - Found child process: 6992 Name: conhost.exe
+2022-10-23 13:12:33 - Found child process: 5144 Name: node.exe
+2022-10-23 13:12:33 - Stopping process 6992
+2022-10-23 13:12:33 - Send SIGINT 6992
+2022-10-23 13:12:33 - SIGINT to 6992 failed - Killing as fallback
+2022-10-23 13:12:34 - Stopping process 5144
+2022-10-23 13:12:34 - Send SIGINT 5144
+2022-10-23 13:12:34 - SIGINT to 5144 failed - Killing as fallback
+2022-10-23 13:12:34 - Stopping process 14332
+2022-10-23 13:12:34 - Send SIGINT 14332
+2022-10-23 13:12:34 - SIGINT to 14332 failed - Killing as fallback
+2022-10-23 13:12:34 - Finished ccosupport.exe
+2022-10-23 13:12:34 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-23 13:12:34 - Started 17592
+2022-10-31 10:07:02 - Stopping ccosupport.exe
+2022-10-31 10:07:02 - ProcessKill 17592
+2022-10-31 10:07:02 - Found child process: 15892 Name: conhost.exe
+2022-10-31 10:07:02 - Found child process: 4032 Name: node.exe
+2022-10-31 10:07:02 - Stopping process 15892
+2022-10-31 10:07:02 - Send SIGINT 15892
+2022-10-31 10:07:02 - SIGINT to 15892 failed - Killing as fallback
+2022-10-31 10:07:02 - Stopping process 4032
+2022-10-31 10:07:02 - Send SIGINT 4032
+2022-10-31 10:07:02 - SIGINT to 4032 failed - Killing as fallback
+2022-10-31 10:07:02 - Stopping process 17592
+2022-10-31 10:07:02 - Send SIGINT 17592
+2022-10-31 10:07:02 - SIGINT to 17592 failed - Killing as fallback
+2022-10-31 10:07:02 - Finished ccosupport.exe
+2022-10-31 10:07:03 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-31 10:07:03 - Started 4028
+2022-10-31 10:38:25 - Stopping ccosupport.exe
+2022-10-31 10:38:25 - ProcessKill 4028
+2022-10-31 10:38:25 - Found child process: 20076 Name: conhost.exe
+2022-10-31 10:38:25 - Found child process: 20392 Name: node.exe
+2022-10-31 10:38:25 - Stopping process 20076
+2022-10-31 10:38:25 - Send SIGINT 20076
+2022-10-31 10:38:25 - SIGINT to 20076 failed - Killing as fallback
+2022-10-31 10:38:25 - Stopping process 20392
+2022-10-31 10:38:25 - Send SIGINT 20392
+2022-10-31 10:38:25 - SIGINT to 20392 failed - Killing as fallback
+2022-10-31 10:38:25 - Stopping process 4028
+2022-10-31 10:38:25 - Send SIGINT 4028
+2022-10-31 10:38:25 - SIGINT to 4028 failed - Killing as fallback
+2022-10-31 10:38:25 - Finished ccosupport.exe
+2022-10-31 10:38:27 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-31 10:38:27 - Started 19784
+2022-11-03 10:32:58 - Stopping ccosupport.exe
+2022-11-03 10:32:58 - ProcessKill 19784
+2022-11-03 10:32:58 - Found child process: 11952 Name: conhost.exe
+2022-11-03 10:32:58 - Found child process: 19620 Name: node.exe
+2022-11-03 10:32:58 - Stopping process 11952
+2022-11-03 10:32:58 - Send SIGINT 11952
+2022-11-03 10:32:58 - SIGINT to 11952 failed - Killing as fallback
+2022-11-03 10:32:58 - Stopping process 19620
+2022-11-03 10:32:58 - Send SIGINT 19620
+2022-11-03 10:32:58 - SIGINT to 19620 failed - Killing as fallback
+2022-11-03 10:32:58 - Stopping process 19784
+2022-11-03 10:32:58 - Send SIGINT 19784
+2022-11-03 10:32:58 - SIGINT to 19784 failed - Killing as fallback
+2022-11-03 10:32:58 - Finished ccosupport.exe
+2022-11-03 10:32:59 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-11-03 10:32:59 - Started 15872
+2022-11-03 10:33:26 - Stopping ccosupport.exe
+2022-11-03 10:33:26 - ProcessKill 15872
+2022-11-03 10:33:26 - Found child process: 3564 Name: conhost.exe
+2022-11-03 10:33:26 - Found child process: 4744 Name: node.exe
+2022-11-03 10:33:26 - Stopping process 3564
+2022-11-03 10:33:26 - Send SIGINT 3564
+2022-11-03 10:33:26 - SIGINT to 3564 failed - Killing as fallback
+2022-11-03 10:33:27 - Stopping process 4744
+2022-11-03 10:33:27 - Send SIGINT 4744
+2022-11-03 10:33:27 - SIGINT to 4744 failed - Killing as fallback
+2022-11-03 10:33:27 - Stopping process 15872
+2022-11-03 10:33:27 - Send SIGINT 15872
+2022-11-03 10:33:27 - SIGINT to 15872 failed - Killing as fallback
+2022-11-03 10:33:27 - Finished ccosupport.exe
+2022-11-03 10:35:49 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-11-03 10:35:49 - Started 22080
+2023-01-23 09:17:23 - Stopping ccosupport.exe
+2023-01-23 09:17:23 - Finished ccosupport.exe
+2023-01-23 09:17:24 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-01-23 09:17:24 - Started 21436
+2023-06-04 13:20:09 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-06-04 13:20:09 - Started 28712
+2023-06-04 13:22:30 - Stopping ccosupport.exe
+2023-06-04 13:22:30 - ProcessKill 28712
+2023-06-04 13:22:30 - Found child process: 32692 Name: conhost.exe
+2023-06-04 13:22:30 - Found child process: 26576 Name: node.exe
+2023-06-04 13:22:30 - Stopping process 32692
+2023-06-04 13:22:30 - Send SIGINT 32692
+2023-06-04 13:22:30 - SIGINT to 32692 failed - Killing as fallback
+2023-06-04 13:22:30 - Stopping process 26576
+2023-06-04 13:22:30 - Send SIGINT 26576
+2023-06-04 13:22:30 - SIGINT to 26576 failed - Killing as fallback
+2023-06-04 13:22:30 - Stopping process 28712
+2023-06-04 13:22:30 - Send SIGINT 28712
+2023-06-04 13:22:30 - SIGINT to 28712 failed - Killing as fallback
+2023-06-04 13:22:30 - Finished ccosupport.exe
+2023-06-04 13:30:09 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-06-04 13:30:09 - Started 15492
+2023-06-05 09:23:31 - Stopping ccosupport.exe
+2023-06-05 09:23:31 - ProcessKill 15492
+2023-06-05 09:23:31 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-06-05 09:23:59 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-06-05 09:23:59 - Started 6600
+2023-06-07 16:14:32 - Stopping ccosupport.exe
+2023-06-07 16:14:32 - ProcessKill 6600
+2023-06-07 16:14:33 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-06-07 16:15:13 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-06-07 16:15:13 - Started 6584
+2023-06-18 10:33:30 - Stopping ccosupport.exe
+2023-06-18 10:33:30 - ProcessKill 6584
+2023-06-18 10:33:30 - Found child process: 6736 Name: conhost.exe
+2023-06-18 10:33:30 - Found child process: 9588 Name: node.exe
+2023-06-18 10:33:30 - Stopping process 6736
+2023-06-18 10:33:30 - Send SIGINT 6736
+2023-06-18 10:33:30 - SIGINT to 6736 failed - Killing as fallback
+2023-06-18 10:33:30 - Stopping process 9588
+2023-06-18 10:33:30 - Send SIGINT 9588
+2023-06-18 10:33:30 - SIGINT to 9588 failed - Killing as fallback
+2023-06-18 10:33:30 - Stopping process 6584
+2023-06-18 10:33:30 - Send SIGINT 6584
+2023-06-18 10:33:30 - SIGINT to 6584 failed - Killing as fallback
+2023-06-18 10:33:30 - Finished ccosupport.exe
+2023-07-02 16:11:12 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-07-02 16:11:12 - Started 13772
+2023-07-04 14:26:54 - Stopping ccosupport.exe
+2023-07-04 14:26:54 - ProcessKill 13772
+2023-07-04 14:26:55 - Found child process: 10224 Name: conhost.exe
+2023-07-04 14:26:55 - Found child process: 2696 Name: node.exe
+2023-07-04 14:26:55 - Stopping process 10224
+2023-07-04 14:26:55 - Send SIGINT 10224
+2023-07-04 14:26:55 - SIGINT to 10224 failed - Killing as fallback
+2023-07-04 14:26:55 - Stopping process 2696
+2023-07-04 14:26:55 - Send SIGINT 2696
+2023-07-04 14:26:55 - SIGINT to 2696 failed - Killing as fallback
+2023-07-04 14:26:55 - Stopping process 13772
+2023-07-04 14:26:55 - Send SIGINT 13772
+2023-07-04 14:26:55 - SIGINT to 13772 failed - Killing as fallback
+2023-07-04 14:26:55 - Finished ccosupport.exe
+2023-07-04 14:26:56 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-07-04 14:26:56 - Started 11520
+2023-07-19 00:50:09 - Stopping ccosupport.exe
+2023-07-19 00:50:09 - ProcessKill 11520
+2023-07-19 00:50:09 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-07-19 00:50:36 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-07-19 00:50:36 - Started 6900
+2023-07-19 01:34:12 - Stopping ccosupport.exe
+2023-07-19 01:34:12 - ProcessKill 6900
+2023-07-19 01:34:13 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-07-19 01:34:35 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-07-19 01:34:36 - Started 7292
+2023-07-19 01:44:06 - Stopping ccosupport.exe
+2023-07-19 01:44:06 - ProcessKill 7292
+2023-07-19 01:44:06 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-07-19 01:44:29 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-07-19 01:44:29 - Started 6600
+2023-07-20 10:29:30 - Stopping ccosupport.exe
+2023-07-20 10:29:30 - ProcessKill 6600
+2023-07-20 10:29:31 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-07-20 10:29:55 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-07-20 10:29:55 - Started 8232
+2023-07-20 12:51:20 - Stopping ccosupport.exe
+2023-07-20 12:51:20 - ProcessKill 8232
+2023-07-20 12:51:21 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-07-20 12:51:44 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-07-20 12:51:44 - Started 5920
+2023-07-20 18:41:27 - Stopping ccosupport.exe
+2023-07-20 18:41:27 - ProcessKill 5920
+2023-07-20 18:41:27 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-07-20 18:41:52 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-07-20 18:41:52 - Started 5724
+2023-07-20 18:51:55 - Stopping ccosupport.exe
+2023-07-20 18:51:55 - ProcessKill 5724
+2023-07-20 18:51:55 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-07-20 18:52:18 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=8096 "C:\ABS CCO Monitor latest\node_modules\node-windows\lib\wrapper.js" --file "C:\ABS CCO Monitor latest\bin\www" --scriptoptions= --log "CCOSupport wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-07-20 18:52:19 - Started 3852

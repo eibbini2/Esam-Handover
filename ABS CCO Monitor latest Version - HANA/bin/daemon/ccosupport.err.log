@@ -1,0 +1,336 @@
+(node:2020) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:15280) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5144) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:4032) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20392) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:19620) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:4744) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26612) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: Invalid login: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbs
+534-5.7.14 1IA2Ti2uusbXrji0kgZb9xVPv2C-SSOxvS2jVzBB2Jyl_WKqvLIGnWcGzo0cN3YSGWOEz
+534-5.7.14 _ejLN30bFNeEfuP_ELhg92wOs1nRBRIu2YLsen_5MqHnnLeSgE-7T9tNjSeSm9Jn>
+534-5.7.14 Please log in via your web browser and then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 x30-20020a05620a0b5e00b00705cef9b84asm9024124qkg.131 - gsmtp
+    at SMTPConnection._formatError (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbs\n' +
+    '534-5.7.14 1IA2Ti2uusbXrji0kgZb9xVPv2C-SSOxvS2jVzBB2Jyl_WKqvLIGnWcGzo0cN3YSGWOEz\n' +
+    '534-5.7.14 _ejLN30bFNeEfuP_ELhg92wOs1nRBRIu2YLsen_5MqHnnLeSgE-7T9tNjSeSm9Jn>\n' +
+    '534-5.7.14 Please log in via your web browser and then try again.\n' +
+    '534-5.7.14  Learn more at\n' +
+    '534 5.7.14  https://support.google.com/mail/answer/78754 x30-20020a05620a0b5e00b00705cef9b84asm9024124qkg.131 - gsmtp',
+  responseCode: 534,
+  command: 'AUTH PLAIN'
+}
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials k2-20020a05620a414200b006faaf6dc55asm17725230qko.22 - gsmtp
+    at SMTPConnection._formatError (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials k2-20020a05620a414200b006faaf6dc55asm17725230qko.22 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ce15-20020a05622a41cf00b003b62e9c82ebsm3077260qtb.48 - gsmtp
+    at SMTPConnection._formatError (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials ce15-20020a05622a41cf00b003b62e9c82ebsm3077260qtb.48 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials k19-20020a05620a415300b006fbaf9c1b70sm6569615qko.133 - gsmtp
+    at SMTPConnection._formatError (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials k19-20020a05620a415300b006fbaf9c1b70sm6569615qko.133 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials f26-20020ac86eda000000b003b63c55c299sm3508869qtv.81 - gsmtp
+    at SMTPConnection._formatError (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials f26-20020ac86eda000000b003b63c55c299sm3508869qtv.81 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials v15-20020a05620a122f00b007023fc46b64sm6940335qkj.113 - gsmtp
+    at SMTPConnection._formatError (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials v15-20020a05620a122f00b007023fc46b64sm6940335qkj.113 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials w22-20020a05620a149600b007090bb886a2sm6760287qkj.118 - gsmtp
+    at SMTPConnection._formatError (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials w22-20020a05620a149600b007090bb886a2sm6760287qkj.118 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+(node:26576) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:22012) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:9608) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:9588) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2696) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16972) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\ABS CCO Monitor latest\Connection.js:176
+                       options.headers["Cookie"] = cookies[cookies.length - 1].join("; ");
+                                                                               ^
+
+TypeError: cookies[(cookies.length - 1)].join is not a function
+    at ClientRequest.<anonymous> (C:\ABS CCO Monitor latest\Connection.js:176:80)
+    at Object.onceWrapper (node:events:628:26)
+    at ClientRequest.emit (node:events:513:28)
+    at HTTPParser.parserOnIncomingClient [as onIncoming] (node:_http_client:693:27)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17)
+    at Socket.socketOnData (node:_http_client:534:22)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+(node:7056) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials a27-20020a0ca99b000000b00632209f7157sm5496110qvb.143 - gsmtp
+    at SMTPConnection._formatError (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials a27-20020a0ca99b000000b00632209f7157sm5496110qvb.143 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials b25-20020a0c9b19000000b0063601efba01sm6363723qve.111 - gsmtp
+    at SMTPConnection._formatError (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials b25-20020a0c9b19000000b0063601efba01sm6363723qve.111 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials s15-20020a05620a030f00b00762f37b206dsm483607qkm.81 - gsmtp
+    at SMTPConnection._formatError (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\ABS CCO Monitor latest\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials s15-20020a05620a030f00b00762f37b206dsm483607qkm.81 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+(node:10132) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:10568) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:10492) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:10416) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:10656) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5020) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6224) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Execute error: [SqlError: insufficient privilege: Detailed info for this error can be found with guid 'CEF3AA5F5951C4488D48EB2A5720588C'] {
+  code: 258,
+  sqlState: 'HY000',
+  level: 1,
+  position: -1
+}
+Execute error: [SqlError: insufficient privilege: Detailed info for this error can be found with guid 'FC3F4484FB789947A06A0747441DA7B0'] {
+  code: 258,
+  sqlState: 'HY000',
+  level: 1,
+  position: -1
+}
+Execute error: [SqlError: insufficient privilege: Detailed info for this error can be found with guid 'C65E8C5A7B2D514ABEA5647DB82295DD'] {
+  code: 258,
+  sqlState: 'HY000',
+  level: 1,
+  position: -1
+}
+Execute error: [SqlError: insufficient privilege: Detailed info for this error can be found with guid '1127CA445A62D84E8E994036804C8FDE'] {
+  code: 258,
+  sqlState: 'HY000',
+  level: 1,
+  position: -1
+}
+Execute error: [SqlError: insufficient privilege: Detailed info for this error can be found with guid 'C94CAED612D34F4D9135633DE5139DE3'] {
+  code: 258,
+  sqlState: 'HY000',
+  level: 1,
+  position: -1
+}
+Execute error: [SqlError: insufficient privilege: Detailed info for this error can be found with guid '9BA52A1C6A44214AA900C2302047B5B9'] {
+  code: 258,
+  sqlState: 'HY000',
+  level: 1,
+  position: -1
+}
+C:\ABS CCO Monitor latest\Connection.js:176
+                       options.headers["Cookie"] = cookies[cookies.length - 1].join("; ");
+                                                                               ^
+
+TypeError: cookies[(cookies.length - 1)].join is not a function
+    at ClientRequest.<anonymous> (C:\ABS CCO Monitor latest\Connection.js:176:80)
+    at Object.onceWrapper (node:events:628:26)
+    at ClientRequest.emit (node:events:513:28)
+    at HTTPParser.parserOnIncomingClient [as onIncoming] (node:_http_client:693:27)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17)
+    at Socket.socketOnData (node:_http_client:534:22)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+(node:9292) Warning: Accessing non-existent property 'resource' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+Execute error: [SqlError: insufficient privilege: Detailed info for this error can be found with guid 'F4415430F9D1514EBAA5D019CA0580D2'] {
+  code: 258,
+  sqlState: 'HY000',
+  level: 1,
+  position: -1
+}
+Execute error: [SqlError: insufficient privilege: Detailed info for this error can be found with guid '0610228E3DDAA34E8F0DA7B3C32B416C'] {
+  code: 258,
+  sqlState: 'HY000',
+  level: 1,
+  position: -1
+}
+Execute error: [SqlError: insufficient privilege: Detailed info for this error can be found with guid '023770CBCE1FCC4182E5B4ADCFA41F44'] {
+  code: 258,
+  sqlState: 'HY000',
+  level: 1,
+  position: -1
+}
+Execute error: [SqlError: insufficient privilege: Detailed info for this error can be found with guid '154ED0E229D25F41AF881184126BE23D'] {
+  code: 258,
+  sqlState: 'HY000',
+  level: 1,
+  position: -1
+}
+Execute error: [SqlError: insufficient privilege: Detailed info for this error can be found with guid 'B64F9983DE49BA4C9CFAC6C7753265DF'] {
+  code: 258,
+  sqlState: 'HY000',
+  level: 1,
+  position: -1
+}
+Execute error: [SqlError: insufficient privilege: Detailed info for this error can be found with guid 'C27827EE70EB2D43AAB95930B1430640'] {
+  code: 258,
+  sqlState: 'HY000',
+  level: 1,
+  position: -1
+}
