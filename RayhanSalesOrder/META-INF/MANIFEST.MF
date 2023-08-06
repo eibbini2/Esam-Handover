@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+CashdeskPOSPlugin: com.sap.cashdeskclosing.plugin.PluginBackEnd
+PluginName: CashDeskClosing1
+CashDeskVersions: 2.0 FP04, 2.0 FP05,  2.0 FP06, 2.0 FP07, 2.0 FP08, 2
+ .0 FP09,2.0 FP13
+

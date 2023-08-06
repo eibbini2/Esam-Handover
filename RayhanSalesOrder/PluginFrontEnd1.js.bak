@@ -1,0 +1,488 @@
+$(function() {
+	$( document ).ready(function() {
+		$('#mainView > div > div.fastSelectionAreaContainer').attr('style',"height:500px !important; width:1600px !important");
+		$('#mainView > div > div.fastSelectionAreaContainer > div.fastSelectionAreaMain').attr('style',"height:500px !important");
+		$('#mainView > div > div.fastSelectionAreaContainer > div.fastSelectionAreaMain > div').attr('style',"height:500px !important");
+		$('#mainView > div > div.fastSelectionAreaContainer > div.fastSelectionAreaMain > div > div.content').attr('style',"height:500px !important");
+		$('#mainView > div > div.fastSelectionAreaContainer > div.fastSelectionAreaMain > div > div.content > div.contentGrid').attr('style',"height:500px !important");
+		$('#fastSelGridRow_0').attr('style',"height:500px !important");
+	setTimeout(function(){ 
+	$('#mainView > div > div.fastSelectionAreaContainer > div.fastSelectionAreaMain > div > div.title').attr('style',"height:500px !important");
+	$('#mainView > div > div.fastSelectionAreaContainer > div.fastSelectionAreaMain > div > div.content > div.quickNav').attr('style',"height:500px !important");
+	$('#mainView > div > div.fastSelectionAreaContainer > div.fastSelectionAreaMain > div > div.card > div.content > div.quickNav').attr('style',"height:500px !important");
+	},300);
+
+		var firstSale;
+
+	function splitArrayIntoChunksOfLen(arr, len) {
+  	 var chunks = [], i = 0, n = arr.length;
+  	 while (i < n) {
+    	  chunks.push(arr.slice(i, i += len));
+ 	 }
+  	 return chunks;
+	}
+
+        var callAPI = function (params) {
+			firstSale = firstSale || params.data;
+		    var url = (typeof(params) === 'string' ? params : params.url),
+		        data = params.data || {},
+		        type = params.type || params.method || 'GET',
+		        call;
+		  if (type === 'GET') {
+		    myData = $.param({});
+			call = $.getJSON(url, myData);
+		  }
+		  else {
+		    call = $.ajax({
+		      url: url,
+		      contentType: 'application/json',
+		      dataType: 'json',
+		      data: JSON.stringify(data),
+		      type: type,
+		      beforeSend: function() {
+
+		          // setting a timeout
+		    	  if (params.url.indexOf('excel') == -1) {
+		          $("#mainView").addClass('loading');
+		          $( "body" ).append( "<div class='loader'></div>" );
+		    	  }
+
+		      },
+		    });
+		  }
+		  call
+		  .success(function (res) {
+
+			  console.log(res.receipt);
+			  $("#mainView").removeClass('loading');
+			
+				splittedReceipt.forEach((item, i) => {
+      	add(item,i);
+
+				});
+
+			 } else {
+			  itemCodes = res.Items;
+			  discounts = res.Discounts;
+			  }
+
+				itemInfoText = $('#itemInfoArea').text();
+				setInterval(function() {
+
+					var itemInfoListDidNotUpdate = itemInfoText === $('#itemInfoArea').text();
+					//console.log("itemInfoListDidNotUpdate", itemInfoListDidNotUpdate);
+
+					if (!itemInfoListDidNotUpdate) {
+					//	getDiscount();
+						itemInfoText = $('#itemInfoArea').text();
+					}
+
+				},150);
+
+		   console.log(res.Items);
+		   console.log(res.Discounts);
+		   $( ".loader" ).remove();
+		  })
+		  .error(function (err) {
+		    console.log(err);
+		    $( ".loader" ).remove();
+		  });
+		};
+
+
+        var callCustomerCards = function (params) {
+			console.log(params)
+		    var url = (typeof(params) === 'string' ? params : params.url),
+		        data = params.data || {},
+		        type = params.type || params.method || 'GET',
+		        call;
+		  if (type === 'GET') {
+		    myData = $.param({});
+			call = $.getJSON(url, myData);
+		  }
+		  else {
+		    call = $.ajax({
+		      url: url,
+		      contentType: 'application/json',
+		      dataType: 'json',
+		      data: JSON.stringify({"customerCard":data}),
+		      type: type,
+		      beforeSend: function() {
+
+		      },
+		    });
+		  }
+		  call
+		  .success(function (res) {
+			console.log(res)
+			getCustomer1(res.customer)
+		   $( ".loader" ).remove();
+		  })
+		  .error(function (err) {
+		    console.log(err);
+		    $( ".loader" ).remove();
+		  });
+		};
+
+
+var addDiscounts = function(sale, prevDiscount, data, i) {
+
+			if(sale) {
+				// if(sale.discount == 0) {
+				// 	return;
+				// }
+			console.log(sale, "POSITION", parseInt(sale.pos), "adding discounts", sale, 'prevDiscount', prevDiscount);
+		//if (sale) {
+		if(i % 2 == 0) {//data[parseInt(sale.pos)-1].discount
+			console.log('without');
+		setTimeout(function(){		createDiscountReceiptEntity(parseInt(sale.pos), false, (sale.discount || 0) ,'', 'PluginNew')},i* 2000)
+		} else {
+			console.log('withTimout');
+			setTimeout(function(){	createDiscountReceiptEntity(parseInt(sale.pos), false, (sale.discount || 0) ,'', 'PluginNew')},i* 1000)
+		}
+					setTimeout(function(){
+				$('#superUser').val('Admin');
+				$('#superPassword').val('abs@1234');
+				$('.button.first').click();},150);
+
+	}
+//}
+		}
+
+        
+
+var getDiscounts = function() {
+			var sale = $('#reciept_DataGrid').jqGrid('getGridParam', 'data');
+			sale.forEach(row=> {
+				if (row.material) {
+				console.log(row.material, row.pos);
+
+		let itemCode = $("#"+row.pos+" [aria-describedby='reciept_DataGrid_material']").text();
+		let discountAmount = $("#"+row.pos+" [aria-describedby='reciept_DataGrid_discountperc']").text();
+		let quantityAmount = $("#"+row.pos+" [aria-describedby='reciept_DataGrid_quantity']").text();
+		var index = itemCodes.indexOf(itemCode);
+		var discountPercent = discounts[index];
+		 console.log(index, itemCode, discountPercent)
+			if(index >= 0 && discountPercent > 0) {
+				if(parseFloat(discountAmount) == 0) {
+			 createDiscountReceiptEntity(row, true, '', discountPercent, 'excel');
+			  console.log(row, true, '', discountPercent, 'Plugin');
+			} else if (parseFloat(quantityAmount) < 0) {
+				createDiscountReceiptEntity(row, true, '', -discountPercent, 'excel');
+			} else if(parseFloat(discountAmount) > discountPercent) {
+				return;
+			} else {
+				createDiscountReceiptEntity(row, true, '', discountPercent, 'excel');
+			}
+
+				console.log("parseFloat(discountAmount) <= 0", parseFloat(discountAmount), parseFloat(discountAmount) <= 0)
+			setTimeout(function(){
+				$('#superUser').val('8864');
+				$('#superPassword').val('8864');
+				$('.button.first').click();},150);
+			}
+				}
+			})
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$("#resumeBtn")
+.replaceWith('<button id="calculateDiscounts" name="calculateDiscounts" class="ui-button ui-widget ui-corner-all ui-button-text-only autoSizeTextWithLineBreak">Calculate Promo</button>');
+
+$('#calculateDiscounts').on("click", function(e){
+    var sale = $('#reciept_DataGrid').jqGrid('getGridParam', 'data');
+        sale[0].Total = $('#totalAmountInput').val();
+		sale[0].CardCode = $('#customerIDInput').val() || '';
+    callAPI({url:'http://localhost:4000', type: 'post', data:sale});
+    addDiscounts();
+						setTimeout(function(){
+				$('#superUser').val('Admin');
+				$('#superPassword').val('abs@1234');
+				$('.button.first').click();},150);
+  //  getDiscounts();
+});
+
+$('#okBtn').on("click", function(e){
+    var sale = $('#reciept_DataGrid').jqGrid('getGridParam', 'data');
+    callAPI({url:'http://localhost:4000', type: 'post',  data:sale});
+    addDiscounts();
+   // getDiscounts();
+});
+
+$(document).on('keyup', '#customerIDInput', function(e) {
+	var customerInput = $('#customerIDInput').val();
+	if ( customerInput.length >= 15 ) {
+    callCustomerCards({url:'http://localhost:4000/getCustomerCards', type: 'post',  data: customerInput.slice(1,-1)});	
+	}
+});
+
+
+
+$("<style>")
+.prop("type", "text/css")
+.html("\
+.loader {\
+color: #ffffff;\
+font-size: 20px;\
+margin: 100px auto;\
+width: 1em;\
+height: 1em;\
+border-radius: 50%;\
+position: relative;\
+text-indent: -9999em;\
+-webkit-animation: load4 1.3s infinite linear;\
+animation: load4 1.3s infinite linear;\
+-webkit-transform: translateZ(0);\
+-ms-transform: translateZ(0);\
+transform: translateZ(0);\
+}\
+@-webkit-keyframes load4 {\
+0%,\
+100% {\
+box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;\
+}\
+12.5% {\
+box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;\
+}\
+25% {\
+box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;\
+}\
+37.5% {\
+box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;\
+}\
+50% {\
+box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;\
+}\
+62.5% {\
+box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;\
+}\
+75% {\
+box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;\
+}\
+87.5% {\
+box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;\
+}\
+}\
+@keyframes load4 {\
+0%,\
+100% {\
+box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;\
+}\
+12.5% {\
+box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;\
+}\
+25% {\
+box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;\
+}\
+37.5% {\
+box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;\
+}\
+50% {\
+box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;\
+}\
+62.5% {\
+box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;\
+}\
+75% {\
+box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;\
+}\
+87.5% {\
+box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;\
+}\
+}\
+.loader{\
+position: fixed;\
+left: 0px;\
+top: 0px;\
+width: 100%;\
+height: 100%;\
+z-index: 9999;\
+background: url('https://thumbs.gfycat.com/RelievedSilentArcticwolf-small.gif')\
+            50% 50% no-repeat rgb(255,255,255);\
+}	\
+").appendTo("head");
+
+var barcodeText;
+$('#materialSearchInput').attr('id', 'barcodeSearchInput');
+$('#barcodeSearchInput').attr('name', 'barcodeSearchInput');
+$('#barcodeSearchInput').on({
+    keyup: function(e) {
+        itemInfoText = $('#itemInfoArea').text();
+        if (e.keyCode !== 13) {
+            barcodeText = $(this).val();
+            console.log(barcodeText)
+        }
+        if (e.keyCode === 13) {
+console.log('enter',barcodeText)
+setTimeout(function(){
+console.log('is visible', $('#changeVoucherFundsDialog').is(":visible"));
+if ($('#changeVoucherFundsDialog').is(":visible")) {
+$('#returnVoucherButton').click();
+var voucherID= barcodeText;
+var discount = voucherID.substring(4,6);
+var promoID = voucherID.substring(11);
+var storeID = $('.currentReceiptInfo').text().substring(0,4);
+console.log('storeID',storeID,'voucherID.substring(0,4)', voucherID.substring(0,4))
+if (voucherID.substring(0,4) == storeID) {
+alert('discount on items ' + discount);
+var sale = $('#reciept_DataGrid').jqGrid('getGridParam', 'data');
+sale[0].discountType = 'buyGetVoucher';
+sale[0].promoId = promoID;
+sale[0].discount = discount;
+
+callAPI({url:'http://localhost:4000', type: 'post',  data:sale});
+//addDiscounts(item[i], data[ item[i].pos -1].discount * parseFloat(data[ item[i].pos -1].quantity), firstSale, arrayNum, data[ item[i].pos -1].discount * parseFloat(data[ item[i].pos -1].quantity), firstSale, arrayNum);
+return;
+}
+}
+},1000);
+}
+
+    }
+});
+
+$('#salesDetails').append('<div class="optionItem"><button id="calculateServiceCharge">Service Charge</button></div>');
+		
+
+/*
+$(document).on('keyup', '#customerIDInput', function(e) {
+ var customerInput = $('#customerIDInput').val();
+if ( customerInput.length >= 15 ) {
+var aylaCustomerID= customerInput.substr(2, 6); 
+aylaCustomerID = "C".toUpperCase() +"u"+aylaCustomerID;
+ $('#customerIDInput').val(aylaCustomerID);
+ getCustomer1();
+}
+});
+*/
+ function getCustomer1(customerCode) {
+        $.ajax({
+            url: 'SearchServlet',
+            data: {
+                entity: 'customer',
+                method: 'basic',
+                searchInput: customerCode,
+                _search: false,
+                rows: 1,
+                page: 1
+            },
+            type: 'POST',
+            dataType: 'JSON',
+            success: function(data) {
+                if (data && data.rows && data.rows.length > 0) {
+                    var customer = data.rows[0];
+                    if (customer.statusvalue !== '2') {
+                        showCustomerNotActivePopup();
+                        return;
+                    } else {
+						$('#customerIDInput').val(customer.customerID);
+                        executeRetrieveCustomer();
+                        return;
+                    }
+                }
+                checkLoyaltyScanAccount($('#customerIDInput').val()).catch((err) => {
+                    if (data.records === 0) {
+                        showError(customerNotActiveTranslations['NO_ID_AVAILABLE']);
+                    } else {
+                        showError(err);
+                    }
+                }).then((loyaltyInfo) => {
+                    playAttentionBeep();
+                    setInBackendCall(false);
+                });
+            },
+            error: function(xhr, status, error) {
+                showError(error);
+            }
+        });
+    }
+	
+	var serviceCharge = 0;
+var serviceChargePercent = 0.10;
+var serviceChargeExists = false;
+function calculateServiceCharge() {
+serviceCharge = 0;
+sales = $('#reciept_DataGrid').jqGrid('getGridParam', 'data');
+console.log(sales);
+sales.forEach((sale, i)=>{ 
+if (sale.material && sale.state != '3') {
+if(sale.material == "SC0000001"){
+serviceChargeExists = true;
+} else {
+serviceChargeExists = false;
+}
+var taxRate = 0;
+if (sale.taxTypeCode == "S16") {
+taxRate = 1.16;
+}
+
+if (sale.taxTypeCode == "S10") {
+taxRate = 1.10;
+}
+
+if (sale.taxTypeCode == "S7") {
+taxRate = 1.07;
+}
+
+if (sale.taxTypeCode == "S8") {
+taxRate = 1.08;
+}
+
+if (sale.taxTypeCode == "S4") {
+taxRate = 1.04;
+}
+
+if (sale.taxTypeCode == "S2") {
+taxRate = 1.02;
+}
+
+if (sale.taxTypeCode == "S0") {
+taxRate = 1;
+}
+
+if (sale.taxTypeCode == "X0") {
+taxRate = 1;
+}
+
+
+if (sale.taxTypeCode == "SN") {
+taxRate = 1;
+}
+
+console.log(serviceCharge,parseFloat(sale.unitPrice), parseFloat(sale.quantity),  taxRate, serviceChargePercent)
+serviceCharge = serviceCharge + (parseFloat(sale.unitPrice) * parseFloat(sale.quantity) /  taxRate) * serviceChargePercent;
+}
+})
+if (serviceChargeExists) {
+return;
+}
+serviceCharge = serviceCharge + serviceCharge * 0.07;
+console.log("ServiceCharge",serviceCharge.toFixed(2))
+var item = {id:'SC0000001', material: 'SC0000001', unitPriceOrigin: serviceCharge.toFixed(2)  ,grossValue: serviceCharge.toFixed(2), unitPriceChanged: false, manualPriceChange: true};
+	queryForSalesItem(item);
+setTimeout(function(){
+	$(`#${sales.length-1}`).closest('tr').find('td:eq(6) input').val(serviceCharge.toFixed(2));
+	$(`#${sales.length-1} td:nth-child(2)`).click();
+}, 1000)
+
+}
+
+$(document).on('click', '#calculateServiceCharge', function(){calculateServiceCharge()});
+
+});
+});
