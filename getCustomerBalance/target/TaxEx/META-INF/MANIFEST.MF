@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven 3.8.6
+Built-By: ydamisi
+Build-Jdk: 11.0.16
+CashDeskVersions: n/a,2.0 FP06, 2.0 FP09, 2.0 FP13
+CashdeskPOSPlugin: abs.cco.plugins.App
+Implementation-Title: CustomerCardPlugin
+Implementation-URL: http://maven.apache.org
+Implementation-Vendor-Id: abs.cco.plugins
+Implementation-Version: 0.0.1
+PluginName: CustomerCardPlugin
+Specification-Title: CustomerCardPlugin
+Specification-Version: 0.0
+Version: 0.0.1
+
