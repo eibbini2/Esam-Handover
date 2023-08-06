@@ -1,0 +1,100 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+  <groupId>abs.cco1.plugins</groupId>
+  <artifactId>PreventSalesOfZeroItems</artifactId>
+  <version>1.0.0</version>
+  <name>PreventSalesOfZeroItems</name>
+  <url>http://maven.apache.org</url>
+  <packaging>jar</packaging>
+
+  	<properties>
+		<sap.scco.pluginClass>abs.cco1.plugins.App</sap.scco.pluginClass>
+		<sap.scco.POSVersions>n/a,2.0 FP06, 2.0 FP09, 2.0 FP13</sap.scco.POSVersions>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
+		 <!--  <maven.compiler.source>1.8</maven.compiler.source>
+           <maven.compiler.target>1.8</maven.compiler.target> -->
+          <maven.compiler.source>11</maven.compiler.source>
+           <maven.compiler.target>11</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+<dependency>
+  <groupId>io.github.openfeign</groupId>
+  <artifactId>feign-core</artifactId>
+  <version>10.0.1</version>
+</dependency>
+
+<dependency>
+  <groupId>io.github.openfeign</groupId>
+  <artifactId>feign-jackson</artifactId>
+  <version>10.0.1</version>
+</dependency>
+
+<dependency>
+  <groupId>io.github.openfeign</groupId>
+  <artifactId>feign-httpclient</artifactId>
+  <version>10.0.1</version>
+</dependency>
+	</dependencies>
+	<build>
+  <resources>
+    <resource>
+      <directory>resources</directory>
+    </resource>
+  </resources>
+  <plugins>
+    <plugin>
+    	<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+      <executions>
+        <execution>
+          <phase>package</phase>
+          <goals>
+            <goal>shade</goal>
+          </goals>
+          <configuration>
+            <artifactSet>
+              <excludes>
+                <exclude>com.sap:scco:*</exclude>
+              </excludes>
+            </artifactSet>
+            <filters>
+              <filter>
+                <artifact>*:*</artifact>
+                <excludes>
+                  <exclude>META-INF/*.SF</exclude>
+                  <exclude>META-INF/*.DSA</exclude>
+                  <exclude>META-INF/*.RSA</exclude>
+                </excludes>
+            </filter>
+           </filters>
+           <transformers>
+             <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+               <manifestEntries>
+                 <PluginName>${project.name}1</PluginName>
+                 <CashdeskPOSPlugin>${sap.scco.pluginClass}</CashdeskPOSPlugin>
+                 <CashDeskVersions>${sap.scco.POSVersions}</CashDeskVersions>
+                 <Version>${project.version}</Version>
+                 <Specification-Title>${project.name}</Specification-Title>
+                 <Specification-Version>${project.artifact.selectedVersion.majorVersion}.${project.artifact.selectedVersion.minorVersion}</Specification-Version>
+                 <Specification-Vendor> ${project.organization.name}</Specification-Vendor>
+                 <Implementation-Title>${project.name}</Implementation-Title>
+                 <Implementation-Version>${project.version}</Implementation-Version>
+                 <Implementation-Vendor-Id>${project.groupId}</Implementation-Vendor-Id>
+                 <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
+                 <Implementation-URL>${project.url}</Implementation-URL>
+                </manifestEntries>
+              </transformer>
+            </transformers>
+          </configuration>
+        </execution>
+      </executions>
+     </plugin>
+   </plugins>
+</build>
+	<description>PreventSalesOfZeroItems</description>
+</project>

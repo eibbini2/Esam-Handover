@@ -1,0 +1,9 @@
+C:\SapCustomerCheckout\cco\POSPlugins\AP
+
+Copy and past the folder in all other pos 
+
+C:\SapCustomerCheckout\cco\POSPlugins\AP
+
+ Good ? now will chk the equasions and confirm
+thanks. 
+Ok
