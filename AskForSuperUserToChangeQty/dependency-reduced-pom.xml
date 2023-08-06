@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>abs.changeQty.plugins</groupId>
+  <artifactId>authToChangeQty</artifactId>
+  <name>Authorization to Change Quantity Plugin Retail</name>
+  <version>1.0.0</version>
+  <description>Authorization to Change Quantity Plugin Retail</description>
+  <url>http://maven.apache.org</url>
+  <build>
+    <resources>
+      <resource>
+        <directory>resources</directory>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <artifactSet>
+                <excludes>
+                  <exclude>com.sap:scco:*</exclude>
+                </excludes>
+              </artifactSet>
+              <filters>
+                <filter>
+                  <artifact>*:*</artifact>
+                  <excludes>
+                    <exclude>META-INF/*.SF</exclude>
+                    <exclude>META-INF/*.DSA</exclude>
+                    <exclude>META-INF/*.RSA</exclude>
+                  </excludes>
+                </filter>
+              </filters>
+              <transformers>
+                <transformer>
+                  <manifestEntries>
+                    <PluginName>${project.name}1</PluginName>
+                    <CashdeskPOSPlugin>${sap.scco.pluginClass}</CashdeskPOSPlugin>
+                    <CashDeskVersions>${sap.scco.POSVersions}</CashDeskVersions>
+                    <Version>${project.version}</Version>
+                    <Specification-Title>${project.name}</Specification-Title>
+                    <Specification-Version>${project.artifact.selectedVersion.majorVersion}.${project.artifact.selectedVersion.minorVersion}</Specification-Version>
+                    <Specification-Vendor>${project.organization.name}</Specification-Vendor>
+                    <Implementation-Title>${project.name}</Implementation-Title>
+                    <Implementation-Version>${project.version}</Implementation-Version>
+                    <Implementation-Vendor-Id>${project.groupId}</Implementation-Vendor-Id>
+                    <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
+                    <Implementation-URL>${project.url}</Implementation-URL>
+                  </manifestEntries>
+                </transformer>
+              </transformers>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <sap.scco.pluginClass>abs.changeQty.plugins.App</sap.scco.pluginClass>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <sap.scco.POSVersions>n/a,2.0 FP06, 2.0 FP09, 2.0 FP13</sap.scco.POSVersions>
+  </properties>
+</project>
